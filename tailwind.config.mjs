@@ -11,7 +11,11 @@ module.exports = {
   theme: {
 
     extend: {
-
+      colors: {
+        background: {
+          'liner': '27deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%',
+        },
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],
