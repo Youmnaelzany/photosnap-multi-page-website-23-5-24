@@ -1,0 +1,111 @@
+---
+import "@/styles/globals.css";
+---
+
+<header
+  class="relative flex h-[4.5rem] items-center justify-between gap-[2.56rem] px-6 py-7 md:pl-[2.44rem] md:pr-10 xl:max-2xl:gap-[15.69rem] xl:max-2xl:px-[10.31rem]"
+>
+  <!-- Logo & Opem/Close Menu Button -->
+  <div class="flex items-center justify-between gap-[8.56rem]">
+    <a href="/" class=""
+      ><img src="/images/shared/desktop/logo.svg" alt="logo" class="" /></a
+    >
+    <img
+      src="/images/shared/mobile/menu.svg"
+      alt="open menu"
+      class="md:hidden xl:max-2xl:hidden"
+      id="openMenu"
+    />
+    <img
+      src="/images/shared/mobile/close.svg"
+      alt="close menu"
+      class="z-50 hidden"
+      id="closeMenu"
+    />
+  </div>
+  <!--Mobile Menu -->
+  <nav
+    class="absolute left-0 right-0 top-[4.5rem] z-40 hidden bg-white py-8 pl-[2.06rem] pr-8"
+    id="menuBar"
+  >
+    <ul
+      class="relative flex flex-col items-center gap-5 text-center after:absolute after:-bottom-5 after:left-0 after:h-[0.0625rem] after:w-[19.375rem] after:bg-black/25"
+    >
+      <li>
+        <a
+          href="/stories"
+          class="cursor-pointer text-xs font-bold uppercase leading-normal tracking-[0.125rem] text-black transition-colors duration-300 ease-in hover:text-black/30"
+          >Stories</a
+        >
+      </li>
+      <li>
+        <a
+          href="/features"
+          class="cursor-pointer text-[0.9375rem] font-bold uppercase leading-normal tracking-[0.15625rem] text-black transition-colors duration-300 ease-in hover:text-black/30"
+          >Features</a
+        >
+      </li>
+      <li>
+        <a
+          href="/pricing"
+          class="cursor-pointer text-[0.9375rem] font-bold uppercase leading-normal tracking-[0.15625rem] text-black transition-colors duration-300 ease-in hover:text-black/30"
+          >Pricing</a
+        >
+      </li>
+    </ul>
+    <button
+      type="button"
+      class="mt-[2.56rem] flex h-12 w-[19.375rem] cursor-pointer items-center justify-center bg-black text-[0.9375rem] font-bold leading-normal tracking-[0.15625rem] text-white transition-colors duration-300 ease-in hover:bg-[#DFDFDF] hover:text-black"
+    >
+      Get an invite
+    </button>
+  </nav>
+  <!-- Desktop Menu -->
+  <nav class="hidden md:gap-[3.31rem] md:max-2xl:flex xl:max-2xl:gap-[16.5rem]">
+    <ul class="justify-betwee flex items-center gap-[2.31rem]">
+      <li>
+        <a
+          href="/stories"
+          class="cursor-pointer text-xs font-bold uppercase leading-normal tracking-[0.125rem] text-black transition-colors duration-300 ease-in hover:text-black/30"
+          >Stories</a
+        >
+      </li>
+      <li>
+        <a
+          href="/features"
+          class="cursor-pointer text-xs font-bold uppercase leading-normal tracking-[0.125rem] text-black transition-colors duration-300 ease-in hover:text-black/30"
+          >Features</a
+        >
+      </li>
+      <li>
+        <a
+          href="/pricing"
+          class="cursor-pointer text-xs font-bold uppercase leading-normal tracking-[0.125rem] text-black transition-colors duration-300 ease-in hover:text-black/30"
+          >Pricing</a
+        >
+      </li>
+    </ul>
+    <button
+      type="button"
+      class="flex h-10 w-[9.875rem] cursor-pointer items-center justify-center bg-black text-xs font-bold leading-normal tracking-[0.125rem] text-white transition-colors duration-300 ease-in hover:bg-[#DFDFDF] hover:text-black"
+    >
+      Get an invite
+    </button>
+  </nav>
+</header>
+
+<script is:inline>
+  const openMenu = document.getElementById("openMenu");
+  const closeMenu = document.getElementById("closeMenu");
+  const menuBar = document.getElementById("menuBar");
+  openMenu.addEventListener("click", () => {
+    menuBar.classList.remove("hidden");
+    openMenu.classList.add("hidden");
+    closeMenu.classList.remove("hidden");
+  });
+  closeMenu.addEventListener("click", () => {
+    menuBar.classList.add("hidden");
+    openMenu.classList.remove("hidden");
+    closeMenu.classList.add("hidden");
+  });
+</script>
