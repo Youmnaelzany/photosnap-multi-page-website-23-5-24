@@ -1,0 +1,197 @@
+---
+import Header from "@/components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import "@/styles/globals.css";
+import BetaVersion from "@/components/BetaVersion.astro";
+---
+
+<Layout title="Photosnap Website Challenge.">
+  <!-- The Header -->
+  <Header />
+  <main>
+    <section class="relative flex flex-col md:max-2xl:flex-row-reverse">
+      <picture>
+        <source
+          media="(min-width:1440px )"
+          srcset="/images/features/desktop/hero.jpg"
+        />
+        <source
+          media="(min-width:768px )"
+          srcset="/images/features/tablet/hero.jpg"
+        />
+        <img src="/images/features/mobile/hero.jpg" alt="" class="" />
+      </picture>
+      <div
+        class="cardWrapper absolute top-0 h-[18.4rem] w-[23.4375rem] md:h-[30.5rem] md:w-[17.4375rem] xl:max-2xl:w-[52.4375rem]"
+      >
+      </div>
+      <div
+        class="heroSectionAfter relative flex flex-col gap-4 bg-black py-[4.5rem] pl-[1.81rem] pr-7 uppercase after:absolute after:left-[2.06rem] after:top-0 after:h-[0.375rem] after:w-[8rem]
+        md:pb-[8.81rem] md:pl-[3.37rem] md:pr-[3.38rem] md:pt-[10.81rem] md:after:left-0 md:after:top-[10.81rem] md:after:h-[9rem] md:after:w-[0.375rem] md:max-2xl:gap-[1.31rem] xl:max-2xl:pl-28 xl:max-2xl:pr-[6.94rem]"
+      >
+        <h1
+          class="text-[2rem] font-bold leading-10 tracking-[0.20831rem] text-white md:text-[2.5rem] md:leading-[3rem]"
+        >
+          Features
+        </h1>
+        <p
+          class="w-[19.875rem] text-[0.9375rem] font-normal leading-[1.5625rem] text-white/60 md:w-[24.1875rem]"
+        >
+          We make sure all of our features are designed to be loved by every
+          aspiring and even professional photograpers who wanted to share their
+          stories.
+        </p>
+      </div>
+    </section>
+    <!-- Featurse -->
+    <section
+      class="grid grid-cols-1 items-center gap-14 pb-[5.69rem] pl-[2.06rem] pr-8 pt-16 md:grid-cols-2 md:gap-x-[0.81rem] md:gap-y-[4.5rem] md:py-[7rem] md:pl-[2.47rem] md:pr-[2.44rem] md:max-2xl:items-baseline xl:max-2xl:grid-cols-3 xl:max-2xl:gap-[1.88rem] xl:max-2xl:gap-x-[1.88rem] xl:max-2xl:gap-y-[6.5rem] xl:max-2xl:px-[10.31rem] xl:max-2xl:py-40"
+    >
+      <!-- 100% Responsive -->
+      <div class="flex flex-col items-center gap-12">
+        <!-- 100% Responsive Img -->
+        <div class="">
+          <img src="/images/features/desktop/responsive.svg" alt="" class="" />
+        </div>
+        <!-- 100% Responsive Deatailes -->
+        <div class="flex flex-col items-center gap-4 text-center">
+          <h2 class="text-lg font-bold leading-[1.5625rem] text-black">
+            100% Responsive
+          </h2>
+          <p
+            class="w-[19.375rem] text-[0.9375rem] font-normal leading-[1.5625rem] text-black/60 md:w-[21.25rem] xl:max-2xl:w-[21.875rem]"
+          >
+            No matter which the device you&#39;re on, our site is fully
+            responsive and stories look beautiful on any screen.
+          </p>
+        </div>
+        <!-- Available to Embed -->
+      </div>
+      <!-- No Photo Upload Limit -->
+      <div class="flex flex-col items-center gap-12">
+        <!-- No Photo Upload Limit Img -->
+        <div class="">
+          <img src="/images/features/desktop/no-limit.svg" alt="" class="" />
+        </div>
+        <!-- No Photo Upload Limit Deatailes -->
+        <div class="flex flex-col items-center gap-4 text-center">
+          <h2 class="text-lg font-bold leading-[1.5625rem] text-black">
+            No Photo Upload Limit
+          </h2>
+          <p
+            class="w-[19.375rem] text-[0.9375rem] font-normal leading-[1.5625rem] text-black/60 md:w-[21.1875rem] xl:max-2xl:w-[21.875rem]"
+          >
+            Our tool has no limits on uploads or bandwidth. Freely upload in
+            bulk and share all of your stories in one go.
+          </p>
+        </div>
+      </div>
+      <!-- Available to Embed -->
+      <div class="flex flex-col items-center gap-12">
+        <!-- Available to Embed Img -->
+        <div class="">
+          <img src="/images/features/desktop/embed.svg" alt="" class="" />
+        </div>
+        <!-- Available to Embed Deatailes -->
+        <div class="flex flex-col items-center gap-4 text-center">
+          <h2 class="text-lg font-bold leading-[1.5625rem] text-black">
+            Available to Embed
+          </h2>
+          <p
+            class="w-[19.375rem] text-[0.9375rem] font-normal leading-[1.5625rem] text-black/60 md:w-[21.1875rem] xl:max-2xl:w-[21.875rem]"
+          >
+            Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube
+            videos, Google Maps, and more.
+          </p>
+        </div>
+      </div>
+      <!-- Custom Domain -->
+      <div class="flex flex-col items-center gap-12">
+        <!-- Custom Domain Img -->
+        <div class="">
+          <img
+            src="/images/features/desktop/custom-domain.svg"
+            alt=""
+            class=""
+          />
+        </div>
+        <!-- Custom Domain Deatailes -->
+        <div class="flex flex-col items-center gap-4 text-center">
+          <h2 class="text-lg font-bold leading-[1.5625rem] text-black">
+            Custom Domain
+          </h2>
+          <p
+            class="w-[19.375rem] text-[0.9375rem] font-normal leading-[1.5625rem] text-black/60 md:w-[21.1875rem] xl:max-2xl:w-[21.875rem]"
+          >
+            With Photosnap subscriptions you can host your stories on your own
+            domain. You can also remove our branding!
+          </p>
+        </div>
+      </div>
+      <!-- Boost Your Exposure -->
+      <div class="flex flex-col items-center gap-12">
+        <!-- Boost Your Exposure Img -->
+        <div class="">
+          <img
+            src="/images/features/desktop/boost-exposure.svg"
+            alt=""
+            class=""
+          />
+        </div>
+        <!-- Boost Your Exposure Deatailes -->
+        <div class="flex flex-col items-center gap-4 text-center">
+          <h2 class="text-lg font-bold leading-[1.5625rem] text-black">
+            Boost Your Exposure
+          </h2>
+          <p
+            class="w-[19.375rem] text-[0.9375rem] font-normal leading-[1.5625rem] text-black/60 md:w-[21.1875rem] xl:max-2xl:w-[21.875rem]"
+          >
+            Users that viewed your story or gallery can easily get notifed of
+            new and featured stories with our built in mailing list.
+          </p>
+        </div>
+      </div>
+      <!-- Drag & Drop Image -->
+      <div class="flex flex-col items-center gap-12">
+        <!-- Drag & Drop Image Img -->
+        <div class="">
+          <img src="/images/features/desktop/drag-drop.svg" alt="" class="" />
+        </div>
+        <!-- Drag & Drop Image Deatailes -->
+        <div class="flex flex-col items-center gap-4 text-center">
+          <h2 class="text-lg font-bold leading-[1.5625rem] text-black">
+            Drag & Drop Image
+          </h2>
+          <p
+            class="w-[19.375rem] text-[0.9375rem] font-normal leading-[1.5625rem] text-black/60 md:w-[21.1875rem] xl:max-2xl:w-[21.875rem]"
+          >
+            Easily drag and drop your image and get beautiful shots everytime.
+            No over the top tooling to add friction to creating stories.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Beta -->
+    <BetaVersion />
+  </main>
+  <!-- The Footer -->
+</Layout>
+
+<style>
+  .cardWrapper {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0.27%,
+      rgba(0, 0, 0, 0.66) 100%
+    );
+  }
+
+  .heroSectionAfter::after {
+    background: linear-gradient(
+      27deg,
+      #ffc593 0%,
+      #bc7198 43.29%,
+      #5a77ff 83.33%
+    );
+  }
+</style>
