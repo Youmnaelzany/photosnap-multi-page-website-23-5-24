@@ -1,0 +1,135 @@
+---
+import Header from "@/components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import "@/styles/globals.css";
+import BigStory from "@/components/BigStory.astro";
+---
+
+<Layout title="Photosnap Website Challenge.">
+  <!-- The Header -->
+  <Header />
+  <main>
+    <!-- Hazy Full MOON -->
+    <section class="relative">
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="/images/stories/desktop/moon-of-appalacia.jpg"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/images/stories/tablet/moon-of-appalacia.jpg"
+        />
+        <img
+          src="/images/stories/mobile/moon-of-appalacia.jpg"
+          alt=""
+          class=""
+        />
+      </picture>
+      <!-- Mobile Lightgray Effect -->
+      <div
+        class="cardWrapper absolute top-0 h-[21rem] w-[23.4375rem] md:max-2xl:hidden"
+      >
+      </div>
+      <!-- Mobile Version -->
+      <div class="bg-black py-12 pl-[1.81rem] pr-7 md:max-2xl:hidden">
+        <div class="flex flex-col gap-4 text-white">
+          <h1
+            class="w-[19.875rem] text-xs font-bold uppercase leading-normal tracking-[0.125ren]"
+          >
+            LAST MONTH&#39;S FEATURED STORY
+          </h1>
+          <p
+            class="w-[18.875rem] text-[2rem] font-bold uppercase leading-10 tracking-[0.20831rem]"
+          >
+            HAZY FULL MOON OF APPALACHIA
+          </p>
+          <div class="flex w-[19.875rem] flex-col gap-6">
+            <h2 class="text-sm font-normal leading-normal">
+              <span class="mr-[0.56rem] opacity-75">March 2nd 2020</span> by John
+              Appleseed
+            </h2>
+            <p
+              class="font-noraml text-[0.9375rem] leading-[1.5625rem] opacity-60"
+            >
+              The dissected plateau area, while not actually made up of
+              geological mountains, is popularly called "mountains," especially
+              in eastern Kentucky and West Virginia, and while the ridges are
+              not high, the terrain is extremely rugged.
+            </p>
+            <a
+              href="/stories"
+              class="flex items-center gap-4 text-xs font-bold uppercase leading-normal tracking-[0.125rem] transition-all duration-300 ease-in hover:underline"
+              >READ THE STORY
+              <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14"
+                ><g fill="none" fill-rule="evenodd" stroke="#fff"
+                  ><path d="M0 7h41.864M35.428 1l6 6-6 6"></path></g
+                ></svg
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tablet & Desktop Version -->
+      <div
+        class="cardWrapper absolute top-0 hidden h-auto w-full pb-28 pl-[2.06rem] pt-[7.63rem] text-white md:gap-4 md:max-2xl:flex md:max-2xl:flex-col xl:max-2xl:pb-24 xl:max-2xl:pl-28"
+      >
+        <h1
+          class="text-xs font-bold uppercase leading-normal tracking-[0.125ren]"
+        >
+          LAST MONTH&#39;S FEATURED STORY
+        </h1>
+        <p
+          class="text-[2.5rem] font-bold uppercase leading-[3rem] tracking-[0.26044rem] md:w-[23.1875rem]"
+        >
+          HAZY FULL MOON OF APPALACHIA
+        </p>
+        <div class="flex w-[19.875rem] flex-col gap-6">
+          <h2 class="text-sm font-normal leading-normal">
+            <span class="mr-[0.56rem] opacity-75">March 2nd 2020</span> by John Appleseed
+          </h2>
+          <p
+            class="font-noraml text-[0.9375rem] leading-[1.5625rem] opacity-60"
+          >
+            The dissected plateau area, while not actually made up of geological
+            mountains, is popularly called "mountains," especially in eastern
+            Kentucky and West Virginia, and while the ridges are not high, the
+            terrain is extremely rugged.
+          </p>
+          <a
+            href="/stories"
+            class="flex items-center gap-4 text-xs font-bold uppercase leading-normal tracking-[0.125rem] transition-all duration-300 ease-in hover:underline"
+            >READ THE STORY
+            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14"
+              ><g fill="none" fill-rule="evenodd" stroke="#fff"
+                ><path d="M0 7h41.864M35.428 1l6 6-6 6"></path></g
+              ></svg
+            >
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Big Stories -->
+    <BigStory />
+  </main>
+  <!-- The Footer -->
+</Layout>
+
+<style>
+  .cardWrapper {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0.27%,
+      rgba(0, 0, 0, 0.66) 100%
+    );
+  }
+  .heroSectionAfter::after {
+    background: linear-gradient(
+      27deg,
+      #ffc593 0%,
+      #bc7198 43.29%,
+      #5a77ff 83.33%
+    );
+  }
+</style>
