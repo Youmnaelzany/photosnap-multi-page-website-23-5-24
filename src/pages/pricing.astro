@@ -3,12 +3,14 @@ import Header from "@/components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 import "@/styles/globals.css";
 import BetaVersion from "@/components/BetaVersion.astro";
+import PricingMonthlyYearly from "@/components/PricingMonthlyYearly.astro";
 ---
 
 <Layout title="Photosnap Website Challenge.">
   <!-- The Header -->
   <Header />
   <main>
+    <!-- Pricing -->
     <section class="relative flex flex-col md:max-2xl:flex-row-reverse">
       <picture>
         <source
@@ -43,6 +45,8 @@ import BetaVersion from "@/components/BetaVersion.astro";
         </p>
       </div>
     </section>
+    <!-- Price Table -->
+    <PricingMonthlyYearly />
     <!-- Beta -->
     <BetaVersion />
   </main>
