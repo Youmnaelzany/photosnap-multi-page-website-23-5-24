@@ -28,8 +28,8 @@ This is a solution to the [Photosnap Website challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Youmnaelzany/photosnap-multi-page-website-23-5-24.git)
+- Live Site URL: [Add live site URL here](https://photosnapmultipage235.netlify.app/)
 
 ## My process
 
